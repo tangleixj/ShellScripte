@@ -22,14 +22,14 @@ else
 fi
 
 ##################################################################
-# 2.build
+# 3.build
 ##################################################################
 cd ${JETTY_BASE}
 java -jar ${JETTY_HOME}/start.jar --add-to-startd=http,deploy
 flag=$?
 
 ##################################################################
-# 2.response result
+# 4.response result
 ##################################################################
 if [ ${flag} -eq 0 ];then
   echo "INFO  :  build jetty.base success!"
